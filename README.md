@@ -1,2 +1,2 @@
 # EE350hw3
-Simple MATLAB probability
+Simple MATLAB probability using randi()
