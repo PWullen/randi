@@ -7,8 +7,30 @@
 numE = randi(100,1,15)
 E15 = (numE) >= 80
 sum(E15(:)==1)
+%recall E is actually if atleast 4 students get 80+
+%not simply 1 gets 80+
+if (sum(E15(:)==1)/4) >= 1
+    disp("Event E did occur")
+    disp(sum(E15(:)==1)/4)
+    disp("times")
+elseif (sum(E15(:)==1)/4) ~= 1
+    disp("Event E didn't occur")
+    disp(sum(E15(:)==1)/4)
+elseif (sum(E15(:)==1)/4) < 1
+    disp("Event E didn't occur")
+    disp(sum(E15(:)==1)/4)
+end
 
 %% For 1000 grades
 numofE = randi(100,1,1000)
 E1000 = (numofE) >= 80
 sum(E1000(:)==1)
+%recall E is actually if atleast 4 students get 80+
+%not simply 1 gets 80+
+if (sum(E1000(:)==1)/4) >= 1
+    disp("Event E did occur")
+    disp(sum(E1000(:)==1)/4)
+    disp("times")
+end
+disp("The Estimated P[E] is")
+(sum(E1000(:)==1)/4)/1000
