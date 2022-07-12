@@ -1,2 +1,2 @@
-# EE350hw3
+# Randi Functionality
 Simple MATLAB probability using randi()
